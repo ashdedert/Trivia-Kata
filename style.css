@@ -1,0 +1,159 @@
+/* Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7fa;
+    color: #002454;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    background: #0076DD;
+    color: white;
+    text-align: center;
+}
+
+h2 { padding: 10px; }
+
+/* Quiz */
+#quiz-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Buttons */
+button {
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: auto;
+}
+
+/* Start Form */
+#startForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#startForm label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+#question-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#question-buttons button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    background: #629FE0;
+    color: white;
+}
+
+#question-buttons button.selected,
+#startButton,
+#restartButton {
+    background: #0076DD;
+    color: white;
+}
+
+#startButton,
+#restartButton {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+}
+
+/* Quiz */
+#timer {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#question {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#answers button {
+    padding: 10px;
+    border: 2px solid #0076DD;
+    background: white;
+    color: #002454;
+}
+
+#hintButton {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border: 1px solid #0076DD;
+    background: white;
+    color: #0076DD;
+}
+
+/* Answer States */
+#answers button.correct {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+#answers button.wrong {
+    background: #f44336;
+    border-color: #f44336;
+    color: white;
+}
+
+/* Play Again Button */
+#quiz button {
+    background: #0076DD;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #0076DD;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
